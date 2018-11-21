@@ -1,7 +1,7 @@
 require 'pry'
 class MusicLibraryController
 
-  attr_accessor :path, :files, :alph_song_list, :alph_artist_list, :alph_genre_list
+  attr_accessor :path, :files
 
   def initialize(path = "./db/mp3s") 
     
@@ -30,9 +30,9 @@ class MusicLibraryController
   end 
 
   def list_songs 
-    @alph_song_list = Song.all.sort_by{|song| song.name}
+    x = Song.all.sort_by{|song| song.name}
     y = 1 
-    @alph_song_list.each do |song|
+    x.each do |song|
       puts "#{y}. #{song}"
       y += 1
     end 
