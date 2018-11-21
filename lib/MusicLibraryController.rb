@@ -36,7 +36,7 @@ class MusicLibraryController
       puts "#{y}. #{song}"
       y += 1
     end 
-    binding.pry
+    
   end
   
   def list_artists 
