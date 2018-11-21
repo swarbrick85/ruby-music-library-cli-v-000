@@ -40,7 +40,9 @@ class MusicLibraryController
   end
   
   def list_artists 
-    
+    x = Artist.all.sort_by {|artist| artist.name}
+    y = 1 
+    x.each do |artist|
   end 
   
   def list_genres 
