@@ -76,12 +76,5 @@ class MusicLibraryController
   end 
 
   
-  def play_song 
-    puts "Which song number would you like to play?"
-    a = gets.strip.to_i 
-    if a > 0 && a <= Song.all.length 
-      puts "Playing #{@alph_song_list[a - 1].name} by #{@alph_song_list[a - 1].artist}"
-    else 
-    end 
-  end 
+ 
 end 
