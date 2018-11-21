@@ -8,7 +8,7 @@ class MusicImporter
   end 
   
   def files
-    puts "in files, path=#{@path}"
+    
     puts "wd=...#{Dir.getwd.sub(/.*ruby(.*)/, '\1')}"
     current_dir = Dir.getwd
     Dir.chdir(@path)
