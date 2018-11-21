@@ -31,6 +31,7 @@ class MusicLibraryController
 
   def list_songs 
     x = Song.all.sort_by{|song| song.name}
+    binding.pry
     y = 1 
     x.each do |song|
       puts "#{y}. #{song}"
