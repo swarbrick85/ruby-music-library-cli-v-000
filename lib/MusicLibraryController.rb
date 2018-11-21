@@ -77,7 +77,7 @@ class MusicLibraryController
     end 
   end 
 
-binding.pry
+
    def play_song 
     puts "Which song number would you like to play?"
     a = gets.strip.to_i 
